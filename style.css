@@ -11,6 +11,16 @@ body {
   width: 100vw;
 }
 
+.info {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .genius {
   display: grid;
   grid-template-areas: 
@@ -23,4 +33,33 @@ body {
   border-radius: 50%;
   width: 700px;
   height: 700px;
+}
+
+.red {
+  grid-area: red;
+  background-color: red;
+  border-top-right-radius: 100%;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: green;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+.selected {
+  transition: opacity 0.2s;
+  opacity: 0.5;
 }
